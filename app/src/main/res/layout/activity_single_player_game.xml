@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".app.activities.SinglePlayerGameActivity">
+
+    <com.toksaitov.sms.app.utilities.CustomView
+        android:id="@+id/singlePlayerGameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/pauseButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:alpha="0.4"
+        android:backgroundTint="@color/gray_1000"
+        android:fontFamily="@font/press_start_2p_regular"
+        android:includeFontPadding="false"
+        android:onClick="onPauseButtonClick"
+        android:paddingLeft="16dp"
+        android:paddingTop="5dp"
+        android:text="@string/pauseButtonText"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/upButton"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="-30dp"
+        android:alpha="0.4"
+        android:fontFamily="@font/press_start_2p_regular"
+        android:onClick="onUpButtonClick"
+        android:paddingLeft="18dp"
+        android:paddingTop="10dp"
+        android:text="@string/upButtonText"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/rightButton"
+        app:layout_constraintEnd_toStartOf="@+id/rightButton" />
+
+    <Button
+        android:id="@+id/downButton"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="25dp"
+        android:alpha="0.4"
+        android:fontFamily="@font/press_start_2p_regular"
+        android:onClick="onDownButtonClick"
+        android:paddingLeft="18dp"
+        android:paddingTop="10dp"
+        android:text="@string/downButtonText"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <Button
+        android:id="@+id/leftButton"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="-25dp"
+        android:alpha="0.4"
+        android:fontFamily="@font/press_start_2p_regular"
+        android:onClick="onLeftButtonClick"
+        android:paddingTop="13dp"
+        android:text="@string/leftButtonText"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/downButton"
+        app:layout_constraintEnd_toStartOf="@+id/downButton" />
+
+    <Button
+        android:id="@+id/rightButton"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="-25dp"
+        android:alpha="0.4"
+        android:fontFamily="@font/press_start_2p_regular"
+        android:onClick="onRightButtonClick"
+        android:paddingTop="13dp"
+        android:text="@string/rightButtonText"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/downButton"
+        app:layout_constraintStart_toEndOf="@+id/downButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

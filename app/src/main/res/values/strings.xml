@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="TypographyEllipsis">
+    <string name="appName">Super Mega Snake 9000</string>
+    <string name="menuTitleText">SUPER MEGA SNAKE 9000</string>
+    <string name="singlePlayerGameBtnText">Single-player Game</string>
+    <string name="networkMultiPlayerGameBtnText">Multi-player Game</string>
+    <string name="upButtonText">↑</string>
+    <string name="downButtonText">↓</string>
+    <string name="leftButtonText">←</string>
+    <string name="rightButtonText">→</string>
+    <string name="pauseButtonText">||</string>
+    <string name="pauseMsgText">Paused</string>
+    <string name="backToGameBtnText">Tap here to go back to game</string>
+    <string name="backToMenuButtonText">Go back to menu</string>
+    <string name="defeatTitleTextViewText">You lost...</string>
+    <string name="disconFullRoomReasonText">The game room is full. Try again later...</string>
+    <string name="disconConnErrReasonText">Connection error.</string>
+    <string name="disconInvalidDataReasonText">Server failure.</string>
+    <string name="playButtonText">&gt;</string>
+    <string name="disconMsgTextViewText">Disconnected</string>
+</resources>
